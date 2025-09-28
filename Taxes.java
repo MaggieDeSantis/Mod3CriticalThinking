@@ -1,15 +1,10 @@
 
-import java.util.Scanner;
-
 public class Taxes {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        double income = 1200;
 
-        System.out.print("Enter your weekly income: ");
-        double income = scanner.nextDouble();
-
-        double taxRate;
+        double taxRate = 0.0;
         if (income < 500) {
             taxRate = 0.10;
         } else if (income < 1500) {
@@ -19,7 +14,7 @@ public class Taxes {
         } else if (income >= 2500) {
             taxRate = 0.30;
         }
-        System.out.println("Your tax rate is: ");
-        System.out.println(taxRate);
+        System.out.println("your weekly income is: " + income);
+        System.out.println("Your tax rate is: " + taxRate);
     }
 }
