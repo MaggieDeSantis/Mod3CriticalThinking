@@ -17,8 +17,9 @@ public class Taxes {
         } else if (income < 2500) {
             taxRate = 0.20;
         } else if (income >= 2500) {
-            taxRate = 0.25;
+            taxRate = 0.30;
         }
-        System.out.printf("Your tax rate is: ");
+        System.out.println("Your tax rate is: ");
+        System.out.println(taxRate);
     }
 }
